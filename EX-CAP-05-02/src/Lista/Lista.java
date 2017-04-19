@@ -42,9 +42,11 @@ public class Lista {
 		if (vazio())
 			return null;
 		
+		No noIni = ini;
 		No noAux = ini.getProx();
-		if (noAux == null)
-			return null;
+		
+		if (ini.equals(corr))
+			corr = noAux;
 		
 		if (ini.equals(corr))
 			corr = noAux;
@@ -53,7 +55,7 @@ public class Lista {
 		
 		tam--;
 		
-		return noAux.getElem();
+		return noIni.getElem();
 	}
 	
 	public Object retFin()  {   
