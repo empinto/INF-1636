@@ -18,7 +18,7 @@ public class MeuJPanel extends JPanel {
 		g.drawString("Brasil", 130, 130);
 		g.drawString("Argentina", 175, 130);
 		g.drawString("Uruguai", 240, 130);
-		
+				
 		g2d.draw(lnv);
 		g2d.draw(lnh);
 		
